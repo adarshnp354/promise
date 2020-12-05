@@ -4,8 +4,8 @@ function log(){
     var pas = document.getElementById("pass").value;      
     if(usr=="admin" && pas=="12345"){
         alert("SUCCESS");
-        window.open("list.html")
+        window.location.replace("list.html");
     }else{
         alert("INVALID USERNAME OR PASSWORD");
     }
-}    
+}
