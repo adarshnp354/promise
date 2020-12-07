@@ -5,10 +5,15 @@ req.onreadystatechange = function(){
     if(this.readyState==4&&this.status==200) {
         content=JSON.parse(this.responseText);
         for(var i=0;i<content.length;i++){
-
+            if(content[i].completed==true){
             txt+="<tr>"
-            txt+="<td>"+ `<input type="checkbox" onclick="counter(this)" disable style="";>`+ content[i].title+"</td>"
+            txt+="<td>"+ `<input type="checkbox" disable style="";>`+ content[i].title+"</td>"
             txt+="</tr>"
+            }else{
+            txt+="<tr>"
+            txt+="<td>"+ `<input type="checkbox" onclick="counter(this)";>`+ content[i].title+"</td>"
+            txt+="</tr>"
+            }
         }
         document.getElementById("tab").innerHTML=txt;
     }
@@ -25,14 +30,14 @@ function counter(value){
     var set = new Promise(function(resolve, reject){
         if (value.checked == true){
             count++;
-            if (count >= 6){
-                resolve("5 tasks over");
+            if (count >= 5){
+                resolve("5 tasks completed already");
             }
         }else{
             count--;
         }
     });
-    set.then(function(){
-        alert("5 tasks completed already")
+    set.then(function(s){
+        alert(s);
     });
 }
