@@ -1,5 +1,5 @@
 
-function log(callback){
+function log(){
     var usr = document.getElementById("user").value;
     var pas = document.getElementById("pass").value;
 
@@ -10,9 +10,4 @@ function log(callback){
         alert("INVALID USERNAME OR PASSWORD");
     }
 }
-function 
-
-
-"FUNCTION CALL HERE"
-
 
