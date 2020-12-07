@@ -7,7 +7,7 @@ req.onreadystatechange = function(){
         for(var i=0;i<content.length;i++){
             if(content[i].completed==true){
             txt+="<tr>"
-            txt+="<td>"+ `<input type="checkbox" disable style="";>`+ content[i].title+"</td>"
+            txt+="<td>"+ `<input type="checkbox">`+ content[i].title+"</td>"
             txt+="</tr>"
             }else{
             txt+="<tr>"
