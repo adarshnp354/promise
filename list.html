@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .a{
             float: right;
@@ -18,16 +17,21 @@
 <body>
     <nav>
         <div class="top">
-       <a href="" onclick="load()">TO DO</a>
+       <input type="button" onclick="load()" value="TO DO">
        <div class="a">
        <a href="todo.html">LOG OUT</a>
        </div>
        </div>
+
     </nav>
     <div class="container">
         <table>
-            <tbody id="tab"><br>
-
+            <thead>
+                <tr>
+                    <th>  </th>
+                </tr>
+            </thead>
+            <tbody id="tab">
 
             </tbody>
         </table>
