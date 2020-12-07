@@ -15,3 +15,6 @@ req.onreadystatechange = function(){
 req.open("GET","https://jsonplaceholder.typicode.com/todos",true);
 req.send();
 }
+function logout(){
+    window.location.replace("todo.html");
+}
