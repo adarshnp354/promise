@@ -21,9 +21,6 @@ req.onreadystatechange = function(){
 req.open("GET","https://jsonplaceholder.typicode.com/todos",true);
 req.send();
 }
-function logout(){
-    window.location.replace("todo.html");
-}
 var count=0;
 
 function counter(value){
@@ -40,4 +37,7 @@ function counter(value){
     set.then(function(s){
         alert(s);
     });
+}
+function logout(){
+    window.location.replace("todo.html");
 }
