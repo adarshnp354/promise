@@ -28,7 +28,7 @@ function counter(value){
         if (value.checked == true){
             count++;
             if (count >= 5){
-                resolve("5 tasks completed already");
+                resolve("5 tasks exceeded already");
             }
         }else{
             count--;
