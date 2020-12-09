@@ -9,7 +9,7 @@ function log(){
         alert("INVALID USERNAME OR PASSWORD");
     }
 }
-function call(usr,pas,callback){
+function call(){
     window.location.replace("list.html");
     callback();
 }
